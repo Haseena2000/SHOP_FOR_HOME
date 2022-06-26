@@ -1,4 +1,4 @@
-# Online Shop Application
+# Shop For Home Application
 
 #### A full-stack Online Shop web application using Spring Boot 2 and Angular 7. 
 This is a Single Page Appliaction with client-side rendering. It includes backend and frontend two seperate projects on different branches.
@@ -6,8 +6,6 @@ The frontend client makes API calls to the backend server when it is running.
 
 ## Features
 - REST API
-- Docker
-- Docker Compose
 - JWT authentication
 - Cookie based visitors' shopping cart
 - Persistent customers' shopping cart
@@ -15,7 +13,7 @@ The frontend client makes API calls to the backend server when it is running.
 - Checkout
 - Catalogue
 - Order management
-- Pagination
+
 ## Technology Stacks
 **Backend**
   - Java 11
@@ -62,14 +60,7 @@ Start the backend server before the frontend client.
   
 Note: The backend API url is configured in `src/environments/environment.ts` of the frontend project. It is `localhost:8080/api` by default.
   
-#### Run in Docker
-You can build the image and run the container with Docker. 
-0. Run Postgre in Docker 
-```bash 
-docker run --name mypostgres -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=root -p5432:5432 -d postgres:9.4.5
-sudo apt update
-sudo apt install maven
-mvn -version
+
 ``` 
 1. Build backend project
 ```bash
@@ -82,11 +73,6 @@ cd frontend
 npm install
 alias ng="node_modules/@angular/cli/bin/ng"
 ng build --prod
-```
-3. Build images and run containers
-```bash
-docker-compose up --build
-
 
 ```
 
